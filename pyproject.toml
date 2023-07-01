@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "console_pomodoro"
+version = "0.1.0"
+description = ""
+authors = ["timosii <holdcarter@holdcarter.ru>"]
+packages = [{include="pomodoro"}]
+
+[tool.poetry.scripts]
+start = "pomodoro.scripts.timer_run:main"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
