@@ -1,7 +1,10 @@
-from pomodoro import parser_args
+from pomodoro.parser_args import take_args
+from pomodoro.logic import time_control
 
 def main():
-    print(parser_args.take_args())
+    time, indicator_length, display = take_args()
+    time_control(time, indicator_length, display)
+    
 
 
 if __name__ == '__main__':
