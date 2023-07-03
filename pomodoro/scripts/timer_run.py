@@ -2,8 +2,8 @@ from pomodoro.parser_args import take_args
 from pomodoro.logic import time_control
 
 def main():
-    time, indicator_length, display = take_args()
-    time_control(time, indicator_length, display)
+    time, length_indicator, display = take_args()
+    time_control(time, length_indicator, display)
     
 
 

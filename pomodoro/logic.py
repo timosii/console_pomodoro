@@ -2,14 +2,14 @@ import time
 
 LOGS_PATH = "logging/logs"
 
-def time_control(t, indicator_length=60, display='#'):
+def time_control(t, length_indicator=60, display='#'):
     '''
     На вход поступает необходимое время в минутах.
     Возвращает None, заканчивает работу, спустя это время
     '''
-    cycle = 60 * t / indicator_length
+    cycle = 60 * t / length_indicator
     
-    for _ in range(indicator_length):
+    for _ in range(length_indicator):
         print(display, flush=True, end='')
         time.sleep(cycle)
     print()
