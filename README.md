@@ -1,1 +1,2 @@
-# basic console timer for concentration work
+## Description
+The basic console timer for concentration work
