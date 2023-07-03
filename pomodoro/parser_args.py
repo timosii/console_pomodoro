@@ -6,7 +6,7 @@ def take_args():
     parser.add_argument('-l', '--lenght_indicator', type=int, help='the length \
     of the strip of one cycle (in chars)', default=60)
     parser.add_argument('-d', '--display', \
-                        help='choose char for indication', default='#')
+                        help='choose char for indication', default=' ')
     args = parser.parse_args()
     time = args.time_in_minutes
     indicator = args.lenght_indicator
