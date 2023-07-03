@@ -2,7 +2,7 @@ import time
 from colorama import Back
 from playsound import playsound
 
-LOGS_PATH = "logging/logs"
+LOGS_PATH = "logs"
 
 def time_control(t, length_indicator=60, display=' '):
     '''
@@ -23,7 +23,7 @@ def time_control(t, length_indicator=60, display=' '):
             print(Back.RED + display, flush=True, end='')
             time.sleep(cycle)
     print()
-    playsound("cool_alarm.mp3")
+    playsound("finish_cycle.mp3")
     TEXT = f'Cycle of {t} minutes complete at {time.asctime()}\n'
     write_logs(LOGS_PATH, TEXT)
 
