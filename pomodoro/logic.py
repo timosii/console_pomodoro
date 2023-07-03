@@ -30,7 +30,7 @@ def time_control(t, length_indicator=60, display=' '):
         else:
             print(Back.RED + display, flush=True, end='')
             time.sleep(cycle)
-    print(Back.RESET + '\nCycle finished. Take a rest!')
+    print(Back.RESET + f'\nCycle of {t} minutes finished. Take a rest!')
     playsound("finish_cycle.mp3")
     TEXT = f'Cycle of {t} minutes complete at {time.asctime()}\n'
     write_logs(LOGS_PATH, TEXT)
