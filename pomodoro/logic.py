@@ -44,7 +44,8 @@ def time_control(t, length_indicator=60, display=' '):
         time_diff = stop_time - start_time
         time_diff_in_min = time_diff.seconds // 60
         print(Back.RESET + f'\nCycle interruption at {time_diff_in_min} minute')
-        write_logs(LOGS_PATH, f'Cycle of {time_diff_in_min} minutes complete at {time.asctime()}. Interruption\n')
+        if time_diff_in_min >= 5:
+            write_logs(LOGS_PATH, f'Cycle of {time_diff_in_min} minutes complete at {time.asctime()}. Interruption\n')
         return
 
 
