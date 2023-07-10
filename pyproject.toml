@@ -6,7 +6,7 @@ authors = ["timosii <holdcarter@holdcarter.ru>"]
 packages = [{include="pomodoro"}]
 
 [tool.poetry.scripts]
-work = "pomodoro.scripts.timer_work:main"
+pomodoro = "pomodoro.scripts.timer_work:main"
 
 [tool.poetry.dependencies]
 python = "^3.10"
