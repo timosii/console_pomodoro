@@ -2,6 +2,6 @@
 **/__pycache__/
 dist
 .venv
-# logs
-finish_cycle.mp3
+logs
+
 
