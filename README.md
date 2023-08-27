@@ -21,5 +21,6 @@ pomodoro work <time in minutes>
 ```
 pomodoro rest <time in minutes>
 ```
-At the end of the cycle, a signal will sound and logs will be recorded in the logs file.
+At the end of the cycle, a signal will sound and logs will be recorded in the logs file.  
+To interrupt the cycle before it ends use `Ctrl + C`  
 Enjoy!
