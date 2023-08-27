@@ -6,7 +6,7 @@ git clone https://github.com/timosii/console_pomodoro.git
 cd console_pomodoro
 make install
 make build
-make package_install
+make package-install
 ```
 ## Usage
 - For work
