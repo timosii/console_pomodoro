@@ -26,16 +26,14 @@ def time_control(activity, t):
         time_diff = stop_time - start_time
         time_diff_in_min = time_diff.seconds // 60
         print(f'\nCycle of {activity} has been interrupted at {time_diff_in_min} minute')
-        if time_diff_in_min >= 5:
-            write_logs(LOGS_PATH, f'{time_diff_in_min} minute {activity} cycle was interrupt at {time.asctime()}\n')
+        write_logs(LOGS_PATH, f'{time_diff_in_min} minute {activity} cycle was interrupt at {time.asctime()}\n')
         return
 
 
     print(f'\nThe {t} minute {activity} cycle finished. {finish_message}')
     playsound("finish_cycle.mp3")
     TEXT = f'{t} minute {activity} cycle was complete at {time.asctime()}\n'
-    if t >= 5:
-        write_logs(LOGS_PATH, TEXT)
+    write_logs(LOGS_PATH, TEXT)
 
 
 def write_logs(filename, text):
